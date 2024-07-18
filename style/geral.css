@@ -29,11 +29,7 @@
     justify-content: space-around;
 
 }
-.content > iframe{
-    display: none;
-    height: 95%;
-    width: 30%;
-}
+
 .content > button{
     width: 20%;
     height: 10%;
@@ -47,11 +43,53 @@
     background-color: rgb(253, 240, 189);
     cursor: pointer;
 }
+.imgs{
+    display: flex;
+    width: 50%;
+    height: 89%;
+    align-items: center;
+    justify-content: center;
+
+}
+.imgs > iframe{
+    display: none;
+    height: 100%;
+    width: 85%;
+}
 #text{
     display: none;
 }
-#tendenciosa{
-    display: flex;
-    /*width: 0px;
-    height: 0px;*/
+
+@media screen and (max-width: 992px){
+
+    .filho{
+        display: flex;  
+        width: 90%;
+        height: 80%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .content{
+        display: flex;
+        width: 80%;
+        height: 80%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .content > button{
+        width: 40%;
+        height: 10%;
+        font-size: 16px;
+    }
+    .imgs{
+        width: 100%;
+        height: 100%;
+    }
+    .imgs > iframe{
+        display: none;
+        height: 87%;
+        width: 70%;
+    }
 }
